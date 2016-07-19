@@ -6,7 +6,7 @@ USER root
 
 # Add dependency
 RUN apt-get update
-RUN apt-get install libhdf5-serial-dev netcdf-bin libnetcdf-dev
+RUN apt-get install -y libhdf5-serial-dev netcdf-bin libnetcdf-dev
 
 USER main
 
