@@ -3,6 +3,7 @@ FROM andrewosh/binder-base
 MAINTAINER Erik van Sebille
 
 USER root
+RUN apt update
 RUN apt install libhdf5-serial-dev netcdf-bin libnetcdf-dev
 
 # Install requirements for Python 2
