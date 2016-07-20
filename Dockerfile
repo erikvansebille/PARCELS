@@ -11,3 +11,4 @@ RUN USE_SETUPCFG=0 HDF5_INCDIR=/usr/include/hdf5/serial HDF5_LIBDIR=/usr/lib/x86
 ADD requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
+RUN git clone --recursive https://github.com/erikvansebille/parcels.git
