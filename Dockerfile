@@ -7,7 +7,7 @@ RUN apt update
 RUN apt install -y libhdf5-serial-dev netcdf-bin libnetcdf-dev
 
 # Install requirements for Python 2
-RUN pip install --only-binary all netcdf4
+RUN USE_SETUPCFG=0 HDF5_INCDIR=/usr/include/hdf5/serial HDF5_LIBDIR=/usr/lib/x86_64-linux-gnu/hdf5/serial pip install netcdf4
 ADD requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
