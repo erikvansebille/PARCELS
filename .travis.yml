@@ -34,5 +34,4 @@ script:
     - flake8 parcels
     - flake8 tests
     - flake8 examples
-    - python tests/test_peninsula.py --grid 20 10
-    - py.test -v -s . 
+    - py.test test_PARCELStutorial.ipynb 
